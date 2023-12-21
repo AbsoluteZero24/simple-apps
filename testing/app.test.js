@@ -26,7 +26,7 @@ describe('Unit Test /app1', () => {
     });
   });
 
-describe('Integration Test Connect Database', () => {
+//describe('Integration Test Connect Database', () => {
   beforeEach(() => {
     // Set the connection for the application to use
     app.set('connection', connection.connect);
@@ -41,4 +41,4 @@ describe('Integration Test Connect Database', () => {
     const response = await request(app).get('/users');
     expect(response.status).toBe(200);
   });
-});
+//});
